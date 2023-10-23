@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./indexx.html">
+</head>
+<body>
+
+     <div class="tert">
+    <h3>Agar taomlarning retseptini bilmasangiz</h3>
+    <h3>telegram kanalimizdan bilib olishingiz mumkin</h3>
+    <h3>telegramga shu ssilkani yozing</h3>
+    <h3>https://t.me/barcha_xizmattlar</h3>
+    
+</div>
+
+    <div class="btn">
+
+
+<button><a href="./indexx.html">Taomlar menyusi</a></button>
+
+    </div>
+
+<div class="box">
+    
+    <div class="meal">
+    <p class="menu">  </p>
+    </div>
+
+    <button onclick="handlegenerate()">O'zbek taomlar</button>
+
+</div>
+
+
+</body>
+
+<script>
+const suyuq = [ "Tuxumli ramyon", "Chuchvarali sho'rva", "Oshqovoqdan sho'rva", "Tom-yam sho'rvasi", "Uxa baliqli sho'rvasi", "Qaynatma sho'rva", "Kesma lag'mon", "Moxora", "Mastava", "Mampar", "Xamir xasip", "Qovurdoq", "Choyxona palov", "Cho'zma lag'mon", "Qatlamali somsa", "Norin", "Ko'k somsa", "Manti", "Chuchvara"        ];
+const menu = document.querySelector(".menu");
+let i = null;
+
+
+const handlegenerate = () => {
+
+const random = Math.floor(Math.random() * suyuq.length );
+
+console.log("====================================");
+
+console.log(`after: ${random}`);
+console.log(`before: ${i}`);
+
+console.log("====================================");
+
+if(i === random){
+    
+
+if(random === 0 ){
+
+      menu.innerHTML = suyuq[random - 1];
+}else {
+
+ menu.innerHTML = suyuq[random + 1];
+
+}
+
+  
+}
+
+ menu.innerHTML = suyuq[random];
+i = random
+};
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
